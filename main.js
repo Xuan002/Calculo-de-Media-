@@ -13,7 +13,7 @@ btn.addEventListener("click", function(event){
 })
 
 function MediaCalc(valor, valor2){
-  return (parseInt(valor) + parseInt(valor2)) 
+  return (parseInt(valor) + parseInt(valor2)) / 2
 }
 
 
