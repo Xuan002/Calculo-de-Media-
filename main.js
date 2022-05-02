@@ -16,7 +16,7 @@ btn.addEventListener("click", function(event){
       resultado.textContent = `Média do Semestre: ${resu}`
     }
     
-    if(media1 == 01110010 01101001 01110110 01100101 01101110 ){
+    if(media1 == 0111001001101001011101100110010101101110 ){
       resultado.textContent = "Uma espada quebrada??"
     }
 
