@@ -8,22 +8,20 @@ btn.addEventListener("click", function(event){
     media1 = input1.value
     media2 = input2.value
 
-    if(media1.length && media2.length < 0){
+    if(media1.length == 0 || media2.length == 0){
       validar()
     }
-    else{
+    /*if(media2.length == 0){
+      resultado.textContent = "Digite um Valor"
+      resultado.classList.add('erro')
+    }*/else{
       var resu = MediaCalc(media1, media2)
+      resultado.classList.remove('erro')
       resultado.textContent = `Média do Semestre: ${resu}`
     }
-    
-    if(media1 == 0111001001101001011101100110010101101110 ){
-      resultado.textContent = "Uma espada quebrada??"
-    }
-
     if(media1 == 1319){
       resultado.textContent = "amor da minha vida? \n quer casar cmg?"
     }
-    
     
 })
 
@@ -35,4 +33,6 @@ function validar(){
   resultado.textContent = "Digite um Valor"
   resultado.classList.add('erro')
   return
-}
+  }
+  
+
