@@ -21,7 +21,7 @@ btn.addEventListener("click", function(event){
     }
     
     if(media1 == 666){
-      resultado.textContent = "Arthur?"
+      resultado.textContent = "Arthur??"
     }
 
     if(media1 == 1319){
