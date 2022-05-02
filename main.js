@@ -8,20 +8,16 @@ btn.addEventListener("click", function(event){
     media1 = input1.value
     media2 = input2.value
 
-    if(media1.length == 0){
-      resultado.textContent = "Digite um Valor"
-      resultado.classList.add('erro')
+    if(media1.length && media2.length == 0){
+      validar()
     }
-    if(media2.length == 0){
-      resultado.textContent = "Digite um Valor"
-      resultado.classList.add('erro')
-    }else{
+    else{
       var resu = MediaCalc(media1, media2)
       resultado.textContent = `Média do Semestre: ${resu}`
     }
     
-    if(media1 == 666){
-      resultado.textContent = "Arthur??"
+    if(media1 == 01110010 01101001 01110110 01100101 01101110 ){
+      resultado.textContent = "Uma espada quebrada??"
     }
 
     if(media1 == 1319){
@@ -35,4 +31,8 @@ function MediaCalc(valor, valor2){
   return (parseInt(valor) + parseInt(valor2)) / 2
 }
 
-
+function validar(){
+  resultado.textContent = "Digite um Valor"
+  resultado.classList.add('erro')
+  return
+}
