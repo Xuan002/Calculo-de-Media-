@@ -19,6 +19,9 @@ span{
     width: 100%;
     
 }
+.erro{
+    color: red;
+}
 .container{
     border-radius: 30px;
     display: flex;

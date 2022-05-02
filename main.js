@@ -7,9 +7,22 @@ btn.addEventListener("click", function(event){
     event.preventDefault();
     media1 = input1.value
     media2 = input2.value
+
+    if(media1.length == 0){
+      resultado.textContent = "Digite um Valor"
+      resultado.classList.add('erro')
+    }
+    if(media2.length == 0){
+      resultado.textContent = "Digite um Valor"
+      resultado.classList.add('erro')
+    }else{
+      var resu = MediaCalc(media1, media2)
+      resultado.textContent = `Média do Semestre: ${resu}`
+    }
     
-    var resu = MediaCalc(media1, media2)
-    resultado.textContent = `Média do Semestre: ${resu}`
+
+    
+    
 })
 
 function MediaCalc(valor, valor2){
