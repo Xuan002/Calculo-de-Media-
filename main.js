@@ -8,7 +8,7 @@ btn.addEventListener("click", function(event){
     media1 = input1.value
     media2 = input2.value
 
-    if(media1.length && media2.length == 0){
+    if(media1.length && media2.length < 0){
       validar()
     }
     else{
