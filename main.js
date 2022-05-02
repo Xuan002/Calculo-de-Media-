@@ -9,7 +9,7 @@ btn.addEventListener("click", function(event){
     media2 = input2.value
     
     var resu = MediaCalc(media1, media2)
-    resultado.textContent = `sua Média é: ${resu}`
+    resultado.textContent = `Média do Semestre: ${resu}`
 })
 
 function MediaCalc(valor, valor2){
