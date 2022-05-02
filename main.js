@@ -20,7 +20,13 @@ btn.addEventListener("click", function(event){
       resultado.textContent = `Média do Semestre: ${resu}`
     }
     
+    if(media1 == 666){
+      resultado.textContent = "Arthur?"
+    }
 
+    if(media1 == 010319){
+      resultado.textContent = "amor da minha vida?"
+    }
     
     
 })
