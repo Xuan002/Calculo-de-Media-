@@ -12,8 +12,8 @@ btn.addEventListener("click", function(event){
     resultado.textContent = `sua Média é: ${resu}`
 })
 
-function MediaCalc(valor, valo2){
-  return parseInt(valor) + parseInt(valo2) / 2
+function MediaCalc(valor, valor2){
+  return (parseInt(valor) + parseInt(valor2)) 
 }
 
 
