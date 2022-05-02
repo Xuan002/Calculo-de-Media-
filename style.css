@@ -1,0 +1,165 @@
+body{
+    
+    background-color: #212227;
+}
+span{
+    display: flex;
+    justify-content: center;
+}
+.cabecalho{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 50px;
+}
+.corpo{
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+    height: 100%;
+    width: 100%;
+    
+}
+.container{
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    height: 480px;
+    width: 400px;
+    
+    background-color: white;
+    
+}
+.formNotas{
+    color: #212227;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    width: 200px;
+    height: 200px;
+}
+
+.form-notas{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+
+.btn{
+    margin-left: 30px;
+    width: 150px;
+    margin-top: 20px;
+    color: #090909;
+    padding: 0.7em 1.7em;
+    font-size: 18px;
+    border-radius: 0.5em;
+    background: #e8e8e8;
+    border: 1px solid #e8e8e8;
+    transition: all .3s;
+    box-shadow: 6px 6px 12px #c5c5c5,
+     -6px -6px 12px #ffffff;
+}
+
+.btn:active{
+     color: #666;
+    box-shadow: inset 4px 4px 12px #c5c5c5,
+    inset -4px -4px 12px #ffffff;
+       
+}
+
+.form-notas {
+    position: relative;
+   }
+   
+   .input {
+    margin-bottom: 40px;
+    font-size: 16px;
+    padding: 10px 10px 10px 5px;
+    display: block;
+    width: 200px;
+    border: none;
+    border-bottom: 1px solid #515151;
+    background: transparent;
+   }
+   
+   .input:focus {
+    outline: none;
+   }
+   
+   label {
+    color: #999;
+    font-size: 18px;
+    font-weight: normal;
+    position: absolute;
+    pointer-events: none;
+    left: 5px;
+    top: 10px;
+    transition: 0.2s ease all;
+    -moz-transition: 0.2s ease all;
+    -webkit-transition: 0.2s ease all;
+   }
+   
+   .input:focus ~ label, .input:valid ~ label {
+    top: -20px;
+    font-size: 14px;
+    color: #5264AE;
+   }
+   
+   .bar {
+    position: relative;
+    display: block;
+    width: 200px;
+   }
+   
+   .bar:before, .bar:after {
+    content: '';
+    height: 2px;
+
+    width: 0;
+    bottom: 1px;
+    position: absolute;
+    background: #5264AE;
+    transition: 0.2s ease all;
+    -moz-transition: 0.2s ease all;
+    -webkit-transition: 0.2s ease all;
+   }
+   
+   .bar:before {
+    left: 50%;
+    margin-bottom: 40px;
+   }
+   
+   .bar:after {
+    right: 50%;
+    margin-bottom: 40px;
+   }
+   
+   .input:focus ~ .bar:before, .input:focus ~ .bar:after {
+    width: 50%;
+   }
+   
+   highlight {
+    position: absolute;
+    height: 60%;
+    width: 100px;
+    top: 25%;
+    left: 0;
+    pointer-events: none;
+    opacity: 0.5;
+   }
+   
+   .input:focus ~ .highlight {
+    animation: inputHighlighter 0.3s ease;
+   }
+   
+   @keyframes inputHighlighter {
+    from {
+     background: #5264AE;
+    }
+   
+    to {
+     width: 0;
+     background: transparent;
+    }
+   }
