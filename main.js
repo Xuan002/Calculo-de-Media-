@@ -16,6 +16,11 @@ btn.addEventListener("click", function(event){
       resultado.classList.add('erro')
     }*/else{
       var resu = MediaCalc(media1, media2)
+      Swal.fire(
+        'Bom trabalho!',
+        `Sua Média do Semestre é: ${resu}!`,
+        'success'
+      )
       resultado.classList.remove('erro')
       resultado.textContent = `Média do Semestre: ${resu}`
     }
@@ -30,9 +35,14 @@ function MediaCalc(valor, valor2){
 }
 
 function validar(){
-  resultado.textContent = "Digite um Valor"
-  resultado.classList.add('erro')
+  Swal.fire({
+    icon: 'error',
+    title: 'Oops...',
+    text: 'Valor Inválido!',
+  })  
   return
   }
+
+  
   
 
