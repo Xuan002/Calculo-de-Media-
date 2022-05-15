@@ -11,22 +11,19 @@ btn.addEventListener("click", function(event){
     if(media1.length == 0 || media2.length == 0){
       validar()
     }
-    /*if(media2.length == 0){
-      resultado.textContent = "Digite um Valor"
-      resultado.classList.add('erro')
-    }*/else{
+    else{
       var resu = MediaCalc(media1, media2)
       Swal.fire(
         'Bom trabalho!',
         `Sua Média do Semestre é: ${resu}!`,
         'success'
       )
-      resultado.classList.remove('erro')
-      resultado.textContent = `Média do Semestre: ${resu}`
     }
     if(media1 == 1319){
       resultado.textContent = "amor da minha vida? \n quer casar cmg?"
     }
+
+    
     
 })
 
@@ -42,6 +39,8 @@ function validar(){
   })  
   return
   }
+
+
 
   
   
